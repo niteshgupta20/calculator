@@ -14,7 +14,7 @@ function calculatorLogic() {
   } else if (value == '=') {
     operand2 = parseFloat(display.textContent);
     // use eval to get result
-    var result = eval(operand1 + " " + operator + operand2);
+    var result = eval(operand1 + " " + operator + " " +operand2);
     if (isNaN(result)) {
       result = "Please Pass Valid Values";
     }
